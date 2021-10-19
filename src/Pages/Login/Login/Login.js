@@ -14,6 +14,9 @@ const Login = () => {
     const history = useHistory()
     const redirect_uri = location.state?.from || "/home";
 
+
+    ///////////////////Handle Google Login//////////////////////
+
     const handleGoogleLogin = () => {
         signInUsingGoogle()
             .then(result => {

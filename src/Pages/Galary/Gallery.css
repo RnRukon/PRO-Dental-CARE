@@ -1,0 +1,9 @@
+.gallery-card:hover {
+    transform: scale(1.5)skew(5deg);
+    z-index: 100;
+    transition: .5s;
+}
+
+.gallery-card {
+    transition: .5s;
+}

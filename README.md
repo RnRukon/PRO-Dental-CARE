@@ -3,12 +3,12 @@
 Live Site ==> (https://pro-dental-care-89cbd.web.app/).
 
 
-==> We operate community dental services, prison dentistry, dental access services, a dental engineering service, as well as two general dental practices.
+==> You can see the service on the Hum page of the website..
 
-==> Dental and vision options for individuals. Find the right plan now! Miss the Enrollment Deadline? Enroll   Today. No Waiting Periods. Individual Dental Plans. Easy online enrollment.
+==> Users will be able to login to the website, new users will be able to register.
 
-==> Dental and vision options for individuals. Find the right plan now! Miss the Enrollment Deadline? Enroll Today. No Waiting Periods. Individual Dental Plans. Easy online enrollment.
+==> If you are not a user of the website, then you will not be allowed to go to the database page.
 
-==> At our dental clinic in New York, we provide dental care services like crowns, extractions, and preventative care for people of any age, from children to the elderly. And we offer many other treatment options, such as anesthesia or sedation, for patients with special needs, those who are medically compromised, or who have severe handicapping .
+==> You can see various activities on the gallery page of the website.
 
-==> Dental and vision options for individuals. Find the right plan now! Miss the Enrollment Deadline? Enroll Today. No Waiting Periods. Individual Dental Plans. Easy online enrollment.
+==> Be able to contact an experienced dentist.
