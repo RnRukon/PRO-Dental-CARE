@@ -13,7 +13,7 @@ const Services = () => {
 
             <div className=' container-fluid mt-10 sub-content '>
                 <div className='container'>
-                    <div className="m-0  py-20 text-green-300 ">
+                    <div className="m-0  py-20 text-yellow-400 ">
                         <h2>Our Clients are Our Priority,<br /> We Offer <span className="fw-bolder text-red-500">Pro Dental Care</span><br /> of Specialists</h2>
                         <h5>Enjoy Specialized Care Through Precision,<br /> Artistry, And Experience</h5>
                     </div>

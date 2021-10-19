@@ -1,6 +1,7 @@
 .dentist-card:hover {
     transform: translate(2px);
     transition: .5s;
+    cursor: pointer;
 }
 
 .dentist-card {
