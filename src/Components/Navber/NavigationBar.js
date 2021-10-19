@@ -14,10 +14,7 @@ const NavigationBar = () => {
             <Navbar.Toggle className=" text-info bg-primary" aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 <Nav
-                    className="ms-auto my-2 my-lg-0"
-                    style={{ maxHeight: '100px' }}
-                    navbarScroll
-                >
+                    className="ms-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
                     <Nav.Link as={NavLink} style={{ fontWeight: "bold", color: 'white' }} activeStyle={{ fontWeight: "bold", color: "red" }} to='/home' >Home</Nav.Link>
                     <Nav.Link as={NavLink} style={{ fontWeight: "bold", color: 'white' }} activeStyle={{ fontWeight: "bold", color: "red" }} to="/services" >Services</Nav.Link>
                     <Nav.Link as={NavLink} style={{ fontWeight: "bold", color: 'white' }} activeStyle={{ fontWeight: "bold", color: "red" }} to="/gallery" >Our Gallery</Nav.Link>

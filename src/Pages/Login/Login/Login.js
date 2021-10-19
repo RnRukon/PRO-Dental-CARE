@@ -38,6 +38,7 @@ const Login = () => {
     const emailChange = (e) => setEmail(e.target.value);
     const passwordChange = (e) => setPassword(e.target.value);
 
+    ///////////////////Handle Login email and password //////////////////////
 
     const handleLoginEmailPassword = (e) => {
         e.preventDefault();
