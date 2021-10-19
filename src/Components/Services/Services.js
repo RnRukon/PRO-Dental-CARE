@@ -9,17 +9,24 @@ const Services = () => {
             .then(data => setServices(data))
     }, [])
     return (
-        <div className='container py-20 '>
+        <div className=' pb-20 '>
 
-            <div className="text-yellow-50 mb-2 ">
-                <h2>Our Clients are Our Priority,<br /> We Offer <span className="fw-bolder text-red-500">Pro Dental Care</span><br /> of Specialists</h2>
-                <h5>Enjoy Specialized Care Through Precision,<br /> Artistry, And Experience</h5>
+            <div className=' container-fluid mt-10 sub-content '>
+                <div className='container'>
+                    <div className="m-0  py-20 text-green-300 ">
+                        <h2>Our Clients are Our Priority,<br /> We Offer <span className="fw-bolder text-red-500">Pro Dental Care</span><br /> of Specialists</h2>
+                        <h5>Enjoy Specialized Care Through Precision,<br /> Artistry, And Experience</h5>
+                    </div>
+                </div>
             </div>
-            <h1 className=' text-center py-8 text-pink-300 fw-bold'>++++ <span className='text-red-500'>Services</span>++++</h1>
-            <div className="row g-4 mt-5">
-                {
-                    services.map(service => <Service key={service.id} service={service}></Service>)
-                }
+
+            <div className='container'>
+                <h1 className=' text-center py-8 text-pink-300 fw-bold'>++++ <span className='text-red-500'>Services</span>++++</h1>
+                <div className="row g-4 mt-5">
+                    {
+                        services.map(service => <Service key={service.id} service={service}></Service>)
+                    }
+                </div>
             </div>
         </div>
     );
