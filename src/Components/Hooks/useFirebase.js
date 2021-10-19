@@ -13,54 +13,11 @@ const useFirebase = () => {
     const [isLoading, setIsLoading] = useState(true);
 
 
-
-    // const registerUser = (email, password) => {
-    //     const auth = getAuth();
-    //     // console.log(email, password)
-    //     createUserWithEmailAndPassword(auth, email, password)
-    //         .then((userCredential) => {
-    //             // Signed in 
-    //             const user = userCredential.user;
-    //             console.log(user)
-
-    //         })
-    //         .catch((error) => {
-    //             console.log(error)
-    //         });
-
-
-    // }
-
-    // const setUserName = (name) => {
-
-    //     const auth = getAuth();
-    //     updateProfile(auth.currentUser, { displayName: name })
-    //         .then((result) => {
-    //             // Profile updated!
-    //             // ...
-    //         }).catch((error) => {
-    //             // An error occurred
-    //             // ...
-    //             console.log(error)
-    //         });
-    //     console.log(name)
-    // }
-
-
     const signInEmailPassword = (email, password) => {
         setIsLoading(true);
         const auth = getAuth();
-        signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                console.log(user)
-            })
-            .catch((error) => {
-                setError(error.message)
-            }).finally(() => setIsLoading(false))
+        return signInWithEmailAndPassword(auth, email, password)
 
-        console.log(email, password)
 
     }
 
@@ -95,7 +52,7 @@ const useFirebase = () => {
         }).catch((error) => {
             // An error ocurred
             // ...
-            console.log(error)
+
         })
     }
 
@@ -112,9 +69,8 @@ const useFirebase = () => {
         });
     }, [auth])
     return {
-        // setUserName,
-        // registerUser,
         user,
+        setUser,
         signInEmailPassword,
         signInUsingGoogle,
         handleDeleteAccount,

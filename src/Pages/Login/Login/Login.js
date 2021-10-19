@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import useAuth from '../../../Components/Hooks/useAuth';
 import { useLocation, useHistory } from "react-router-dom";
 import { Form } from 'react-bootstrap';
+import './Login.css'
+
 const Login = () => {
     const { signInUsingGoogle, setIsLoading, error, setError, signInEmailPassword } = useAuth();
     const [email, setEmail] = useState();
@@ -10,7 +12,7 @@ const Login = () => {
 
     const location = useLocation();
     const history = useHistory()
-    const redirect_uri = location.state?.from || "/details";
+    const redirect_uri = location.state?.from || "/home";
 
     const handleGoogleLogin = () => {
         signInUsingGoogle()
@@ -32,22 +34,35 @@ const Login = () => {
 
     const emailChange = (e) => setEmail(e.target.value);
     const passwordChange = (e) => setPassword(e.target.value);
-    const handleLogin = (e) => {
+
+
+    const handleLoginEmailPassword = (e) => {
         e.preventDefault();
-        signInEmailPassword(email, password);
+        signInEmailPassword(email, password)
+            .then((userCredential) => {
+                history.push(redirect_uri)
+                // Signed in 
+                const user = userCredential.user;
+                console.log(user)
+                setError('')
+            })
+            .catch((error) => {
+                setError(error.message)
+            }).finally(() => setIsLoading(false))
         e.target.reset();
     }
 
-    return (
-        <div className="mt-10">
-            <h1>Login page</h1>
 
-            <div className="d-flex justify-center">
+    return (
+        <div className=" LoginContainer">
+            <h1 className=" text-pink-600 text-center mb-6 pt-36 fw-bold">Welcome to <span className=' text-yellow-300'>Login</span></h1>
+
+            <div className="d-flex justify-center text-green-500">
                 <div style={{ width: '340px' }}>
-                    <Form onSubmit={handleLogin}>
+                    <Form onSubmit={handleLoginEmailPassword}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control onBlur={emailChange} type="email" placeholder="Enter email" />
+                            <Form.Control required onBlur={emailChange} type="email" placeholder="Enter email" className="border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" />
                             <Form.Text className="text-muted text-red-500">
                                 {error}
                             </Form.Text>
@@ -55,19 +70,28 @@ const Login = () => {
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label>Password</Form.Label>
-                            <Form.Control onBlur={passwordChange} type="password" placeholder="Password" />
+                            <Form.Control required onBlur={passwordChange} type="password" placeholder="Password" />
                         </Form.Group>
 
-                        <button type="submit">
-                            Submit
-                        </button>
+                        <div className='text-center mb-6'>
+
+                            <button style={{ width: '340px' }} className='btn  btn-warning text-center' type="submit">
+                                Submit
+                            </button>
+                        </div>
                     </Form>
                 </div>
             </div>
 
             {/* ---------------------------------------------------------------------------------- */}
-            <button onClick={handleGoogleLogin}>Google Login</button>
-            <p>New User? Please <Link to='/register'>Register</Link></p>
+            <div className="text-center  text-purple-500 pb-10 fw-bold">
+                <h4>---------- or ---------</h4>
+                <button style={{ width: '340px' }} onClick={handleGoogleLogin} className='btn btn-primary '>Google Login</button>
+
+                <div className="mt-5">
+                    <NavLink to="/register" className='text-decoration-none '><h5>New User? <span className='text-pink-500'>Please Register</span></h5></NavLink>
+                </div>
+            </div>
         </div>
     );
 };

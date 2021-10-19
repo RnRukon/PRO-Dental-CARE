@@ -1,34 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className="footerBg py-14">
+        <footer className="footerBg py-10">
             <div className="container">
-                <div style={{ marginTop: '50px' }} className='row text-white '>
+                <div className='row text-white '>
                     <div className='col-lg-3 col-md-6 col-sm-12'>
                         <h4>Rola</h4>
                         <p>Location: 35 West Dental Street </p>
                         <p>Phone: +088 123 654 987</p>
-                        <p> Email: info@rola.com </p>
-                        <div>
-                            <i className="fab fa-facebook"></i>
-                            <i className="fab fa-facebook"></i>
-                            <i className="fab fa-facebook"></i>
-                            <i className="fab fa-facebook"></i>
+                        <p> Email: rukon.js@gamil.com </p>
+                        <div >
+                            <i style={{ fontSize: '30px' }} className="  text-indigo-500 px-2 fab fa-facebook"></i >
+                            <i style={{ fontSize: '30px' }} className="  text-indigo-500 px-2 fab fa-twitter"></i >
+                            <i style={{ fontSize: '30px' }} className="  text-indigo-500 px-2 fab fa-instagram-square"></i >
+                            <i style={{ fontSize: '30px' }} className="  text-indigo-500 px-2 fab fa-linkedin"></i>
                         </div>
                     </div>
                     <div className='col-lg-3 col-md-6 col-sm-12'>
                         <h4>Useful Links</h4>
-                        <Link className='text-white'>About Us</Link><br />
-                        <Link className='text-white'>Our Services</Link><br />
-                        <Link className='text-white'>Appointment</Link><br />
-                        <Link className='text-white'>Contact Us</Link><br />
+
+                        <Link to="/services" className='text-white'>Our Services</Link><br />
+                        <Link to="/gallery" className='text-white'>Our Gallery</Link><br />
+                        <Link to="/about" className='text-white'>About us</Link><br />
+                        <Link to="/register" className='text-white'>Register</Link><br />
+                        <Link to="/login" className='text-white'>Login</Link><br />
 
                     </div>
                     <div className='col-lg-3 col-md-6 col-sm-12'>
-                        <h4>Our Services</h4>
+                        <NavLink to='/services'><h4>Our Services</h4></NavLink>
                         <p>Cosmetic Dentistry </p>
                         <p>General Dentistry</p>
                         <p> Certified Dentist </p>
@@ -49,7 +51,7 @@ const Footer = () => {
                     <small className="text-white">Copyright © 2021 Rola is <span className="text-red-500">Pro Dental Care</span></small>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 };
 

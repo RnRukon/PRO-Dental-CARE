@@ -1,0 +1,8 @@
+.dentist-card:hover {
+    transform: translate(2px);
+    transition: .5s;
+}
+
+.dentist-card {
+    transition: .5s;
+}

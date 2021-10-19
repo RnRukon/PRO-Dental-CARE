@@ -5,40 +5,40 @@ const Header = () => {
     return (
         <Carousel fade>
             <Carousel.Item >
-                <img style={{ height: '500px' }}
+                <img
                     className="d-block img-fluid  w-100"
-                    src="https://themes.hibootstrap.com/rola/wp-content/uploads/2021/07/slides-bg1.jpg"
+                    src="https://i.ibb.co/c3drcPS/slides-bg1.jpg"
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h1 className='text-pink-500 fw-bolder'>HOW TO TAKE CARE OF YOUR TEETH </h1>
+                    <h5 className=' text-indigo-500 fw-bold'>Enjoy Specialized Care Through <br /> Precision, Artistry, And Experience</h5>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    style={{ height: '500px' }}
+
                     className="d-block img-fluid w-100"
-                    src="http://bilalmghl.com/html/timan/extra-images/full-banner-img2.jpg"
+                    src="https://i.ibb.co/JKmwk5Z/slides-bg2.jpg"
                     alt="Second slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h1 className='text-pink-500 fw-bolder'>Exceptional Care for Women</h1>
+                    <h5 className=' text-indigo-500 fw-bold'>Features That You Will Love Us and Enjoy Specialized Care</h5>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    style={{ height: '500px' }}
+
                     className="d-block img-fluid w-100"
-                    src="http://bilalmghl.com/html/timan/extra-images/full-banner-img2.jpg"
+                    src="https://i.ibb.co/1nspQnn/slides-bg3.jpg"
                     alt="Third slide"
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h1 className='text-pink-500 fw-bolder'>Exceptional Customer Service</h1>
+                    <p className=' text-indigo-500 fw-bold'>Enjoy Specialized Care Through  Precision, Artistry, And Experience.</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

@@ -12,6 +12,8 @@ import Register from './Pages/Login/Register/Register';
 import Details from './Pages/Details/Details';
 import AuthProvider from './Components/context/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Gallery from './Pages/Galary/Galary';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
             <Route path="/services">
               <Services></Services>
             </Route>
+            <Route path="/gallery">
+              <Gallery></Gallery>
+            </Route>
             <Route path="/about">
               <About></About>
             </Route>
@@ -41,6 +46,9 @@ function App() {
             <PrivateRoute path="/details/:serviceId">
               <Details></Details>
             </PrivateRoute>
+            <Route exact path="*">
+              <NotFound></NotFound>
+            </Route>
           </Switch>
           <Footer></Footer>
         </Router>
