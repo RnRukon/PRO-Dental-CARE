@@ -3,16 +3,17 @@ import { Carousel } from 'react-bootstrap';
 
 const Header = () => {
     return (
-        <Carousel fade>
+        <Carousel fade style={{ marginTop: '60px' }}>
             <Carousel.Item >
                 <img
+
                     className="d-block img-fluid  w-100"
                     src="https://i.ibb.co/c3drcPS/slides-bg1.jpg"
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h1 className='text-pink-500 fw-bolder'>HOW TO TAKE CARE OF YOUR TEETH </h1>
-                    <h5 className=' text-indigo-500 fw-bold'>Enjoy Specialized Care Through <br /> Precision, Artistry, And Experience</h5>
+                    <h3 className='text-pink-500 fw-bolder font md:text-sm'>HOW TO TAKE CARE OF YOUR TEETH </h3>
+                    <p className=' text-indigo-500 fw-bold'>Enjoy Specialized Care Through <br /> Precision, Artistry, And Experience</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
