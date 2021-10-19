@@ -12,8 +12,8 @@ const Header = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3 className='text-pink-500 fw-bolder font md:text-sm'>HOW TO TAKE CARE OF YOUR TEETH </h3>
-                    <p className=' text-indigo-500 fw-bold'>Enjoy Specialized Care Through <br /> Precision, Artistry, And Experience</p>
+                    <h1 className='text-pink-500 fw-bolder font'>HOW TO TAKE CARE OF YOUR TEETH </h1>
+                    <h5 className=' text-indigo-500 fw-bold'>Enjoy Specialized Care Through <br /> Precision, Artistry, And Experience</h5>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>

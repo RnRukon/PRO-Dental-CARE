@@ -30,7 +30,7 @@ const Footer = () => {
 
                     </div>
                     <div className='col-lg-3 col-md-6 col-sm-12'>
-                        <NavLink to='/services'><h4>Our Services</h4></NavLink>
+                        <NavLink className='text-white' to='/services'><h4>Our Services</h4></NavLink>
                         <p>Cosmetic Dentistry </p>
                         <p>General Dentistry</p>
                         <p> Certified Dentist </p>
