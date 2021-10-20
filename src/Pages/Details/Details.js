@@ -34,9 +34,14 @@ const Details = () => {
                         <h2>{title}</h2>
                         <p>{description}</p><br />
                         <p>{des}</p>
-                        <NavLink to="/home">
+                        <NavLink to="/home" className=" mr-2">
                             <button class="bg-green-500 active:bg-green-700  text-white  rounded-full py-3 px-6 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">
                                 Back to home
+                            </button>
+                        </NavLink>
+                        <NavLink to="/services">
+                            <button class=" bg-blue-500 active:bg-green-700  text-white  rounded-full py-3 px-6  hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">
+                                Back to all services
                             </button>
                         </NavLink>
                     </div>
