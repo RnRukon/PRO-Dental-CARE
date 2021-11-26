@@ -3,12 +3,11 @@
 Live Site ==> (https://pro-dental-care-89cbd.web.app/).
 
 
-==> You can see the service on the Hum page of the website..
+★ Technology: React, React-router, Firebase, Bootstrap, Tailwind CSS, MaterialUI,
+and firebase.
 
-==> Users will be able to login to the website, new users will be able to register.
+➢ Users can go to the details page by clicking on the services.
 
-==> If you are not a user of the website, then you will not be allowed to go to the database page.
+➢ Users can authentication firebase login with google or Create an account and login.
 
-==> You can see various activities on the gallery page of the website.
-
-==> Be able to contact an experienced dentist.
+➢ Users can delete their accounts if they wish.
